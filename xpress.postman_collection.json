@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "f557a42f-e78b-458d-a767-c3d61fd02632",
+		"name": "xpress",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25703138"
+	},
+	"item": [
+		{
+			"name": "Empleados",
+			"item": [
+				{
+					"name": "Empleados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/empleados/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"empleados",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "empleados por cargo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/empleados/cargo/Investigadora",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"empleados",
+								"cargo",
+								"Investigadora"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "empleadosporNombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/empleados/nombre/Carlos López",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"empleados",
+								"nombre",
+								"Carlos López"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tiendas",
+			"item": [
+				{
+					"name": "tiendas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/tiendas/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tiendas",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tiendaspordireccion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/tiendas/direccion/Av. Libertador 1234, Ciudad Central",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tiendas",
+								"direccion",
+								"Av. Libertador 1234, Ciudad Central"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TiendaporNombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/tiendas//nombre/Librería y Papelería Estrella",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tiendas",
+								"",
+								"nombre",
+								"Librería y Papelería Estrella"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api//productos/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"",
+								"productos",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "productosporNombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api//productos/nombre/Raqueta de Tenis",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"",
+								"productos",
+								"nombre",
+								"Raqueta de Tenis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tipodeProductos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/productos/tipo/Electrónica",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"tipo",
+								"Electrónica"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
