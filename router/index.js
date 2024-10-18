@@ -1,10 +1,10 @@
 import { Router } from "express";
-import empleadosrouter from "./empleados.js";
-import tiendasrouter from "./tiendas.js";
-import productosrouter from "./productos.js";
+import employeesrouter from "./employees.js";
+import storesrouter from "./stores.js";
+import productsrouter from "./products.js";
 
 const router = Router();
-router.use("/empleados", empleadosrouter);
-router.use("/tiendas", tiendasrouter);
-router.use("/productos", productosrouter);
+router.use("/employees", employeesrouter);
+router.use("/stores", storesrouter);
+router.use("/products", productsrouter);
 export default router;

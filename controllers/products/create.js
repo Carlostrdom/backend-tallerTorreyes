@@ -1,29 +1,25 @@
-import Producto from "../../models/Producto.js";
+import Product from "../../models/Product.js";
 let createProduct = async (req, res) => {
     try {
         let product = req.body;
-        let newProduct = await Producto.create(product);
+        let newProduct = await Product.create(product);
         return res.status(200).json({
             response: newProduct
         });
     } catch (error) {
-        return res.status(500).json({
-            error: error
-        });
+        next(error);
     }
 };
 
-let createProducts = async (req, res) => {
+let createProducts = async (req, res, next) => {
     try {
         let products = req.body;
-        let newProducts = await Producto.insertMany(products);
+        let newProducts = await Product.insertMany(products);
         return res.status(200).json({
             response: newProducts
         });
     } catch (error) {
-        return res.status(500).json({
-            error: error
-        });
+        next(error);
     }
 };
 
