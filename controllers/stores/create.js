@@ -4,7 +4,7 @@ let createStore = async (req, res) => {
     try {
         let StoreA = req.body;
         let newStore = await Store.create(StoreA);
-        return res.status(200).json({
+        return res.status(201).json({
             response: newStore
         });
     } catch (error) {
@@ -19,7 +19,7 @@ let createStores = async (req, res) => {
     try {
         let createStores = req.body;
         let newStores = await Store.insertMany(createStores);
-        return res.status(200).json({
+        return res.status(201).json({
             response: newStores
         });
     } catch (error) {
